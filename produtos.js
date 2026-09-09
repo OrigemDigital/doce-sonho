@@ -38,13 +38,14 @@ const PRODUTOS = [
     nome: "Dindin Gourmet",
     descricao: "Dindin gourmet cremoso, embalado e lacrado à mão.",
     precoBase: 4.00,
-    foto: "images/bolo.jpg",
+    foto: "images/dindin-kitkat.jpg",
     sabores: [
       { nome: "Ninho com Nutella", preco: 4.00, foto: "images/dindin-ninho-nutella.jpg" },
       { nome: "Morango com Nutella", preco: 4.00, foto: "images/galeria3.jpg" },
-      { nome: "Chocolate", preco: 4.00, foto: "images/dindin-chocolate.jpg" },
-      { nome: "Prestígio", preco: 4.00, foto: "images/galeria5.jpg" },
-      { nome: "Pudim", preco: 5.00, foto: "images/dindin-pudim.jpg" }
+      { nome: "Chocolate Cremoso", preco: 4.00, foto: "images/dindin-chocolate.jpg" },
+      { nome: "Coco com Chocolate", preco: 4.00, foto: "images/galeria5.jpg" },
+      { nome: "Pudim", preco: 5.00, foto: "images/dindin-pudim.jpg" },
+      { nome: "KitKat", preco: 5.00, foto: "images/dindin-kitkat.jpg" }
     ]
   },
   {
