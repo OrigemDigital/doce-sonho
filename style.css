@@ -81,25 +81,30 @@ img { max-width: 100%; display: block; }
 
 /* ===== Hero (bloco Magnolia: foto grande + texto) ===== */
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 480px;
-}
-
-.hero-foto {
-    width: 100%;
-    height: 100%;
-    min-height: 320px;
-    object-fit: cover;
-}
-
-.hero-texto {
     background: linear-gradient(135deg, var(--rosa-suave), var(--rosa-escuro));
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 56px 48px;
+    text-align: center;
+    padding: 64px 24px 56px;
+}
+
+.hero-logo {
+    width: 190px;
+    max-width: 65%;
+    height: auto;
+    margin-bottom: 14px;
+    filter: drop-shadow(0 6px 14px rgba(74, 33, 56, 0.25));
+}
+
+.hero h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    letter-spacing: 0.5px;
 }
 
 .rotulo {
@@ -111,8 +116,6 @@ img { max-width: 100%; display: block; }
     margin: 0 0 12px;
 }
 
-.hero-texto .rotulo { color: #ffe3ec; }
-
 .hero-texto h1 {
     font-family: var(--fonte-titulo);
     font-size: 44px;
@@ -122,9 +125,10 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-frase {
-    font-size: 17px;
+    font-size: 18px;
+    font-style: italic;
     line-height: 1.5;
-    margin: 0 0 20px;
+    margin: 0 0 22px;
     max-width: 420px;
     opacity: 0.95;
 }
@@ -649,10 +653,10 @@ a:focus-visible, button:focus-visible, select:focus-visible {
 
 /* ===== Responsividade ===== */
 @media (max-width: 780px) {
-    .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-foto { height: 260px; min-height: 0; }
-    .hero-texto { padding: 36px 26px; }
-    .hero-texto h1 { font-size: 34px; }
+    .hero { padding: 48px 20px 40px; }
+    .hero-logo { width: 130px; }
+    .hero h1 { font-size: 34px; }
+    .hero-frase { font-size: 16px; }
 
     .bloco-destaque, .bloco-invertido { grid-template-columns: 1fr; direction: ltr; }
     .bloco-foto { height: 220px; min-height: 0; }
